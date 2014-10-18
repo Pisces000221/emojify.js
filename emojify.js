@@ -274,9 +274,7 @@
                     var validator = new Validator();
 
                     while ((match = emojiMegaRe.exec(node.data)) !== null) {
-                        if(validator.validate(match, match.index, match.input)) {
-                            matches.push(match);
-                        }
+                        matches.push(match);
                     }
 
                     for (var i = matches.length; i-- > 0;) {
